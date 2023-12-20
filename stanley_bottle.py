@@ -1,18 +1,19 @@
 class stanley:
-    def __init__(self, product, volume, color, material, DOMF):
+    def __init__(self, product, volume, color, material, DOM):
         self.volume = volume
         self.color = color
         self.material = material
         self.product = product
-        self.DOMF = DOMF
+        self.DOM = DOM
 
 
-    def make_and_modle(self):
-        print(f"was mad in {self.DOMF}, color is {self.color}")
+    def make_and_dom(self):
+        print(f"modle is = {self.product} and made in = {self.DOM}")
 
 
 
 
-bottle = stanley("Ice Flow", 30, "Orange", "steel", "A 23")
-
-bottle.make_and_modle()
+ice_flow = stanley("Ice Flow", 30, "Orange", "steel", "A 23")
+quencher = stanley("Quencher", 40, "blue", "steel", "L 22")
+ice_flow.make_and_dom()
+quencher.make_and_dom()
